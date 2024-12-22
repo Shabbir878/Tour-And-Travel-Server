@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
+
 import mongoose from 'mongoose'
 import app from './app'
 import config from './config'
