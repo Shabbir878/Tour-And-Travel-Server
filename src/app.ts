@@ -5,6 +5,7 @@ import { userRoutes } from './module/User/user.router'
 
 import { tourRoutes } from './module/Tour/tour.router'
 import { bookingRoutes } from './module/booking/booking.router'
+import { globalErrorHandler } from './middlewares/globalErrorHandler'
 
 const app = express()
 
@@ -22,6 +23,6 @@ app.get('/', (req: Request, res: Response) => {
   })
 })
 
-app.use()
+app.use(globalErrorHandler)
 
 export default app
