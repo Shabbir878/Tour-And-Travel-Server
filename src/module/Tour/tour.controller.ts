@@ -17,7 +17,7 @@ const createTour = catchAsync(async (req, res) => {
 })
 
 const getTours = catchAsync(async (req, res) => {
-  console.log('Request Query Parameters:', req.query)
+  // console.log('Request Query Parameters:', req.query)
 
   const result = await TourServices.getToursFromDB(req.query)
 
